@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    style
+      include index.css
+  body
+    - parts = 20
+    - legs = 5
+    - creatures = 10
+    - for(var c=0; c<creatures; c++)
+        .creature
+            - for(var i=0; i<legs; i++)
+                .leg 
+                    - for(var x=0; x<parts; x++)
+                        .seg
+
+    div.uimg                   
